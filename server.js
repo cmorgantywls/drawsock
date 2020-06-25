@@ -19,7 +19,7 @@ function newConnection(socket){
 
 let express = require('express') //make sure express is used
 let app = express() //trigger express function and save it to app variable
-let server = app.listen(3000) //on local host 3000, pay attention! at this point, with just these three lines, going to localhost:3000 in a browser will bring you to a page that says Cannot /GET
+let server = app.listen(80) //on local host 3000, pay attention! at this point, with just these three lines, going to localhost:3000 in a browser will bring you to a page that says Cannot /GET
 
 app.use(express.static('public')) //when people get things from the server, this is what they are served with - everything in the public folder which is currently all things for a p5.js sketch, index, js, and css file
 
